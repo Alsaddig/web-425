@@ -1,0 +1,20 @@
+.parent{
+  height:100vh;
+}
+
+.left{
+  background-color: cyan;
+}
+
+.right{
+  background-color: yellow;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: -100000;
+  z-index: 2;
+  color: white;
+}
