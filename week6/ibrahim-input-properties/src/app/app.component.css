@@ -1,0 +1,42 @@
+.parent{
+  height:100vh;
+
+}
+
+.left{
+  background-color: cyan;
+  max-width:25vw;
+}
+
+.right{
+  background-color: yellow;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: white;
+}
+
+.frm-login {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.frm-login-body {
+  display: flex;
+  flex-direction: column;
+   margin-top: 15px;
+   background-color: azure;
+   padding:20px;
+   border: 2px solid black;
+   border-radius: 20px;
+}
+
+.wrapper {
+  width: 100%;
+}
