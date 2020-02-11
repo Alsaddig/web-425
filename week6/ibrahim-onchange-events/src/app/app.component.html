@@ -1,0 +1,86 @@
+div class="parent" fxLayout="row">
+
+      <mat-toolbar class="menu" role="header" color="primary">
+      <mat-toolbar-row>
+        <button mat-button class="toolbar__icon-button mat-button">
+          <mat-icon>web</mat-icon>
+          <span style="margin-left: 5px !important;">WEB 425</span>
+        </button>
+        <button mat-button class="mat-button">
+          About
+        </button>
+        <button mat-button class="mat-button">
+          Contact Us
+        </button>
+
+        <div fxFlex></div>
+
+        <!-- User Profile -->
+        <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>perm_contact_calendar</mat-icon>
+            <span>My Profile</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="left" fxFlex>
+        <br/><br/><br/>
+
+    </div>
+
+    <div class="right" fxFlex>
+      <br/><br/><br/>
+      <div class="wrapper">
+        <br/><br/>
+      <div class="frm-login">
+              <mat-card-content class="login-panel frm-login-panel">
+                <mat-card-content class="frm-login-body">
+                    <h2>Parent</h2>
+                  <br>
+                  Greeting:
+                  <mat-form-field appearance="outline">
+                      <div>
+                       <input type="text" matInput [(ngModel)]="myGreeting">
+                      </div>
+                    </mat-form-field>
+                      <br>
+                      User name:
+                      <mat-form-field appearance="outline">
+                        <div>
+                         <input type="text" matInput [(ngModel)]="myUser.name">
+                        </div>
+                        <!--<input type="text" matInput placeholder="Enter stock (e.g. AAPPL)" (change)="onChangeEvent($event)">-->
+                        <mat-hint>Enter Value Above</mat-hint>
+                      </mat-form-field>
+              </mat-card-content>
+            </mat-card-content>
+
+            <br/><br/><br/>
+
+            <mat-card-content class="login-panel frm-login-panel">
+                <mat-card-content class="frm-login-body">
+                  <br>
+                  <app-child [greeting]="myGreeting" [user]="myUser"></app-child>
+                  <br>
+              </mat-card-content>
+            </mat-card-content>
+
+          </div>
+        </div>
+    </div>
+
+
+    </div>
