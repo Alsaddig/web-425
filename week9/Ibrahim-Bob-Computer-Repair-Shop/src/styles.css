@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+hr {
+    border-top: 3px solid #000000 !important;
+    margin-bottom:1px !important;
+    margin-top:1px !important;
+}
+
+input[type="checkbox"]
+{
+    vertical-align:middle;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example-container > * {
+    width: 100%;
+  }
+
+  .modal-title {
+    color: #000000;
+  }

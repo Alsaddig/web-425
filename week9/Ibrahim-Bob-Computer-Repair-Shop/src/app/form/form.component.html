@@ -1,0 +1,17 @@
+<div ng-app ng-controller="myCtrl" class="form-group">
+
+    <label><h2>Add in Equipment Cost and Labor Estimate.</h2></label>
+    <hr>
+    <br><br>
+
+    <label for="partsLabel">Cost of Parts: </label>
+    <input required [(ngModel)]="parts" id="partsLabel" type="number" placeholder="Enter Estimated Value..." class="form-control">
+
+  <br>
+
+    <label for="laborLabel">Cost of Labor: </label>
+    <input required [(ngModel)]="labor" id="laborLabel" type="number" placeholder="Cost of Labor at $25/hr" class="form-control">
+
+
+  </div>
+  <hr>
